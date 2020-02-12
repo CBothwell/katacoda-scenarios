@@ -36,7 +36,7 @@ metadata:
   name: mysql-pv
   labels:
     app: wordpress
-    tier: database
+    tier: mysql
 spec:
   capacity:
     storage: 5Gi 
@@ -118,7 +118,7 @@ spec:
       storage: 5Gi
   selector:
     matchLabels:
-      tier: "frontend"
+      tier: frontend
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -135,8 +135,12 @@ spec:
       storage: 5Gi
   selector:
     matchLabels:
-      tier: "database"
+      tier: mysql
 </pre>
+
+Lets apply those changes to our cluster. 
+
+`kubectl apply -f wordpress-config.yml`{{execute}}
 
 Now lets take a look at the volume claims.
 

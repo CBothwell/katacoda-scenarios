@@ -10,9 +10,11 @@ We also need to know the `kind`, you can think of this as being similar to the c
 
 After the API and Kind are defined we need to make sure it runs in the project / App. We use the `metadata` to namespace and group the objects we create.
 
-If we think of the entire yaml document as a constructor the `spec` In the case of this service, it needs to be running on port 80 and load balance between deployments (which we will create later) with a specific label
+If we think of the entire yaml document as a constructor the `spec` In the case of this service, it needs to be running on port 80 and load balance between deployments (which we will create later) with a specific label.
 
-<pre class="file" data-filename="wordpress-config.yml" data-target="$">
+Lets add the following to our `wordpress-config.yml` file:
+
+<pre class="file" data-filename="wordpress-config.yml" data-target="replace">
 ---
 apiVersion: v1
 kind: Service
@@ -35,9 +37,9 @@ After adding the definition of the Service to your `wordpress-config.yml` we wil
 
 We should see a success message afterward indicating the object was created. Lets inspect our cluster and see that it created our object. 
 
-`kubectl get Service`{{execute}}
+`kubectl get service`{{execute}}
 
 We should see two services listed. If we want to narrow this down, we can just get the `app` labled service.
 
-`kubectl get Service -l app`{{execute}}
+`kubectl get Service -l app=wordpress`{{execute}}
 
