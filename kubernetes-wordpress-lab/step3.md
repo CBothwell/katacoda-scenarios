@@ -6,7 +6,7 @@ You can learn more about how to use [secrets](https://kubernetes.io/docs/concept
 
 We're only going to need the one secret, `MYSQL_ROOT_PASSWORD`. First we're going to need to generate the base64 encoded value of a password.
 
-`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 | base64`{{execute}}
+`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1 | base64`{{execute}}
 
 You'll want to copy this password for later.
 
