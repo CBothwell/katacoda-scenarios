@@ -40,7 +40,7 @@
       "client": [
         {
           "file": "wordpress-config.yml",
-          "target": "~/"
+          "target": "/root"
         }
       ]
     }
