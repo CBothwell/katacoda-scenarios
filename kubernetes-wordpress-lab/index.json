@@ -2,40 +2,32 @@
   "title": "Kubernetes WordPress Lab",
   "description": "Basic introduction to Kubernetes using WordPress",
   "difficulty": "Beginner",
-  "time": "2",
+  "time": "1 Hour",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Creating a Service",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Creating Some Volumes",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Creating a Secret",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Creating Another Service for MySQL",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Creating The Deployments",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Checking the Installation",
         "text": "step6.md"
-      },
-      {
-        "title": "Step 7",
-        "text": "step7.md"
-      },
-      {
-        "title": "Step 8",
-        "text": "step8.md"
       }
     ],
     "intro": {
@@ -43,6 +35,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "wordpress-config.yml",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
