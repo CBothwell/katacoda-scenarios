@@ -1,5 +1,26 @@
 # Thanks for Taking the Time Today
 
+Today we leanred: 
+
++ How to use Kubectl
++ How to create Kubernetes objects with yaml 
++ How to get wordpress set up on Kubernetes
+
+We use the following Kinds of objects:
+
++ Services
++ PersistantVolumes
++ PersistantVolumeClaims
++ Secrets
++ Deployments
+
+We talked about the various ways these objects are constructed
+
++ What the apiVersion is for
++ What the kind is
++ What the metadata is for
++ What the spec does
+
 ## Additional Resources
 
 +[Service](https://kubernetes.io/docs/concepts/services-networking/service/)
