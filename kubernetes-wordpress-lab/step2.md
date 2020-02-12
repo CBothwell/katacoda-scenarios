@@ -85,10 +85,6 @@ All volumes at the same time.
 
 `kubectl get pv`{{execute}}
 
-We should see both volumes listed. Now lets see all of the resources for our app.
-
-`kubectl get all -l app=wordpress`{{execute}}
-
 # Add Some PersistantVolumeClaims
 
 Just like the `PersistantVolumes` we need to do a bit of leg work to make sure these get set up correctly.

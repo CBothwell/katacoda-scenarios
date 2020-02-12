@@ -1,6 +1,6 @@
 # A Brief Refelection
 
-By now our `wordpress-config.yml` is getting pretty large. We've got a couple `Services`, a `Secret`, a pair of `PersistantVolumes` and `PersistantVolumeClaims`. Lets to a moment to look at our diagram we saw in the introdution and see what we have left to build. 
+By now our `wordpress-config.yml` is getting pretty large. We've got a couple `Services`, a `Secret`, a pair of `PersistantVolumes` and `PersistantVolumeClaims`. Lets take a moment to look at our diagram we saw in the introdution and see what we have left to build. 
 
 ![k8s-diagram](k8s-wordpress.png)
 
@@ -14,11 +14,11 @@ Our `metadata` should look familiar, however the `spec` is going to be a bit mor
 
 ## Containers
 
-`Deployments` wrap `Pods` the information contained in the `template` works like the definition for the `Pod`. The `template.spec` contains a list of `containers` (Pods have one or more `containers`) and a list of `volumes`. 
+`Deployments` wrap `Pods`. The information contained in the `template` works like the definition for the `Pod`. The `template.spec` contains a list of `containers` (Pods have one or more `containers`) and a list of `volumes`. 
 
 For our `continer` we need to specify a Docker image. For the MySQL `Deployment` we are going to use mysql taged with 5.6, `mysql:5.6`. 
 
-In the `env` we are going to create our `MYSQL_ROOT_PASSWORD` useing our `Secret`. You an see we use the `Secret's` `name` and `key` defined the `Secret.data`. 
+In the `env` we are going to create our `MYSQL_ROOT_PASSWORD` using our `Secret`. You an see we use the `Secret's` `name` and `key` defined in the `Secret.data`. 
 
 Additonally we'll create an open port for mysql to listen in on and specifiy a location to mount the `PersistantVolume` at.
 
@@ -115,7 +115,7 @@ spec:
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
-          claimName: wp-pv-claim
+          claimName: wordpress-pv-claim
 </pre>
 
 Okay! Lets add these to our cluster. 
@@ -130,3 +130,4 @@ Lets make sure things are created properly.
 
 `kubectl get all -l tier=frontend`{{execute}}
 
+Before moving on we'll want to make sure the status for all deployments is Ready

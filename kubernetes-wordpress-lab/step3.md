@@ -1,6 +1,6 @@
 # Add a Secret
 
-Secrets are supposed to be that secret. But we're going to play it a little fast and loose today since we want to get the concept down and not nessisarily get to the best practises yet. 
+Secrets are supposed to be that, secret. But we're going to play it a little fast and loose today since we want to get the concept down and not nessisarily get to the best practises yet. 
 
 You can learn more about how to use [secrets](https://kubernetes.io/docs/concepts/configuration/secret/) at the kubernetes documentation on them. 
 
@@ -22,6 +22,8 @@ type: Opaque
 data:
   password: $COPIED_PASSWORD
 </pre>
+
+Lets replace `$COPIED_PASSWORD` with the generated password we copied from the CLI. 
 
 Now lets create the secret.
 
