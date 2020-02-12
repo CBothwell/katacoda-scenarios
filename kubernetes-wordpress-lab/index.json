@@ -37,13 +37,10 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
-        {
-          "file": "wordpress-config.yml",
-          "target": "/root"
-        }
-      ]
-    }
+    },
+    "files": [
+      "wordpress-config.yml"
+    ]
   },
   "environment": {
     "uilayout": "editor-terminal"
