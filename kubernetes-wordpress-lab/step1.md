@@ -10,7 +10,7 @@ We also need to know the `kind`, you can think of this as being similar to the c
 
 After the API and Kind are defined we need to make sure it runs in the project / App. We use the `metadata` to namespace and group the objects we create.
 
-If we think of the entire yaml document as a constructor the `spec` In the case of this service, it needs to be running on port 80 and load balance between deployments (which we will create later) with a specific label.
+If we think of the entire yaml document as a constructor, the `spec` provides the values we pass to the constructor. In the case of this service, it needs to be running on port 80 and load balance between deployments (which we will create later). We tell teh service which deployments to balance between by using a selector with a specific set of labels.
 
 Lets add the following to our `wordpress-config.yml` file:
 
