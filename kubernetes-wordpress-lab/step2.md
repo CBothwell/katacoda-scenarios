@@ -24,7 +24,7 @@ Additionally, we need to specify the `persistentVolumeReclaimPolicy`. It can be 
 + Recycle (will delete the contents of the volume) -- Note this is depricated
 + Delete (will delete the storage asset)
 
-Lastely, we'll need to do a bit of preplanning here. To get these to link up with our specific VoluemeClaims, we'll need to add a new label which we can use to select the specific Volume.
+Lastely, we'll need to do a bit of preplanning here. To get these to link up with our specific VolumeClaims, we'll need to add a new label which we can use to select the specific Volume.
 
 Armed with that information lets go ahead and create our two PersistantVolumes:
 
