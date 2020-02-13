@@ -6,7 +6,7 @@ Today we leanred:
 + How to create Kubernetes objects with yaml 
 + How to get wordpress set up on Kubernetes
 
-We use the following Kinds of objects:
+We used the following Kinds of objects:
 
 + Services
 + PersistantVolumes
@@ -20,6 +20,7 @@ We talked about the various ways these objects are constructed
 + What the kind is
 + What the metadata is for
 + What the spec does
++ How labels enable us to connect various objects together
 
 ## Additional Resources
 
