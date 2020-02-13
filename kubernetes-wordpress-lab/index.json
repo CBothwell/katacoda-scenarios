@@ -41,7 +41,7 @@
         "file": "wordpress-config.yml",
         "target": "~/"
       }
-    },
+    }
   },
   "files": [
     "wordpress-config.yml"
