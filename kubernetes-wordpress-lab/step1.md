@@ -1,9 +1,5 @@
 # Set up a Service
 
-Lets start by creating a file to hold our objects in. 
-
-`touch wordpress-config.yml`{{execute}}
-
 The Service is going to be our first Kubernetes object that we create. To create any object we need to know the API that it is defined in. In our cases the Service is defined in the core API, `v1`. 
 
 We also need to know the `kind`, you can think of this as being similar to the class. Kubernetes provieds a number of *primative* `kind`s defined in different API groups.
