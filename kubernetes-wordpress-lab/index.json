@@ -42,10 +42,10 @@
         "target": "~/"
       }
     },
-    "files": [
-      "wordpress-config.yml"
-    ]
   },
+  "files": [
+    "wordpress-config.yml"
+  ],
   "environment": {
     "uilayout": "editor-terminal"
   },
