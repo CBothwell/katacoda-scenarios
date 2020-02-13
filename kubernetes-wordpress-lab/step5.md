@@ -18,13 +18,13 @@ Our `metadata` should look familiar, however the `spec` is going to be a bit mor
 
 For our `continer` we need to specify a Docker image. For the MySQL `Deployment` we are going to use mysql taged with 5.6, `mysql:5.6`. 
 
-In the `env` we are going to create our `MYSQL_ROOT_PASSWORD` using our `Secret`. You an see we use the `Secret's` `name` and `key` defined in the `Secret.data`. 
+In the `env` we are going to create our `MYSQL_ROOT_PASSWORD` using our `Secret`. You can see we use the `Secret's` `name` and `key` defined in the `Secret.data`. 
 
 Additonally we'll create an open port for mysql to listen in on and specifiy a location to mount the `PersistantVolume` at.
 
 ## Getting the Volume
 
-We're going to name the `volume` which we already referenced in the `container` and we'll select the `PersistantVolumeClaim` we want to use using its name. 
+We're going to `name` the `volume` which we already referenced in the `container` and we'll select the `PersistantVolumeClaim` we want to use using its `name`. 
 
 ## The MySQL Config
 
