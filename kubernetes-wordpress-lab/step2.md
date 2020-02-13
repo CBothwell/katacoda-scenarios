@@ -10,7 +10,7 @@ The `capacity` will let us specify how much space we get.
 
 The `storageClassName` will let us set the storage class we are going to use. Storage classes are vender specific. For AWS we might have `AWSElasticBlockStore`, for Azure we might have `AzureFile`. In our case, we are going to use the `manual` and specify a location on the node using `hostPath`. This is **not** a production storage class. Each of these may support one or more `accessModes`. 
 
-`accessModes` let us list the types of access a claim can make a `PersistantVolume`
+`accessModes` let us list the types of access a claim can make on a `PersistantVolume`
 
 + ReadWriteOnce
 + ReadOnlyMany
