@@ -95,6 +95,8 @@ We need to select an `accessMode` that corrisponds to one of the avaiable for th
 
 The last important bit for these two volume claim is the `matchLabel` selector. As you may recall we added another label in the `metadata` of our `PersistantVolumes` we can use this label to select which claim goes where. Otherwise, Kubernetes will auto assign these out based on the other values in the `spec` with what matches the availiable `PersistantVolumes`. 
 
+Matching against labels for different objects is a recurring pattern in Kubernetes. You may reacall we also used this concept to lay some ground work for the wordpress service in the previous step. 
+
 The config changes should look like:
 
 <pre class="file" data-filename="wordpress-config.yml" data-target="append">

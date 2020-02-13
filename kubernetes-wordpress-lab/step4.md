@@ -27,4 +27,4 @@ Lets list our services.
 
 `kubectl get service -l app=wordpress`{{execute}}
 
-We should see this new service added to the list of services.
+We should see this new service added to the list of services. Note: it shouldn't have an IP. We are going to route traffic to and from it using labels.

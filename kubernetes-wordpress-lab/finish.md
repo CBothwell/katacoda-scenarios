@@ -23,10 +23,10 @@ We talked about the various ways these objects are constructed
 
 ## Additional Resources
 
-+[Service](https://kubernetes.io/docs/concepts/services-networking/service/)
++ [Service](https://kubernetes.io/docs/concepts/services-networking/service/)
 
-+[PersistantVolumes / PersistantVolumeClaims](https://kubernetes.io/docs/concepts/storage/persistent-volumes)
++ [PersistantVolumes / PersistantVolumeClaims](https://kubernetes.io/docs/concepts/storage/persistent-volumes)
 
-+[Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
++ [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 
-+[Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
++ [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)

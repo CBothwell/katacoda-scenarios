@@ -10,6 +10,8 @@ We're only going to need the one secret, `MYSQL_ROOT_PASSWORD`. First we're goin
 
 You'll want to copy this password for later.
 
+Lets add the secret to our config.
+
 <pre class="file" data-filename="wordpress-config.yml" data-target="append">
 ---
 apiVersion: v1
@@ -24,6 +26,8 @@ data:
 </pre>
 
 Lets replace `$COPIED_PASSWORD` with the generated password we copied from the CLI. 
+
+You may note we dont' have a `spec` but instead have a `data`. Secrtes contain key value pairs defined in `data` with the values being base64 encoded.
 
 Now lets create the secret.
 
