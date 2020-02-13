@@ -37,6 +37,10 @@
       "text": "finish.md"
     },
     "assets": {
+      "client": {
+        "file": "wordpress-config.yml",
+        "target": "~/"
+      }
     },
     "files": [
       "wordpress-config.yml"
