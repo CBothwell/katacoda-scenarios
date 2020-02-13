@@ -37,7 +37,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": {
+      "host01": {
         "file": "wordpress-config.yml",
         "target": "~/"
       }
